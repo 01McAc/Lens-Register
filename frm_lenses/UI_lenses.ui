@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2152</width>
+    <height>1059</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="5" column="0">
+     <widget class="QFrame" name="frame1">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QTableView" name="tbl_all_lenses">
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>38</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 170, 0);</string>
+         </property>
+         <property name="text">
+          <string>Lenses</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_reset_sort">
+         <property name="toolTip">
+          <string>Reset sorting to default</string>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cmb_select">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(131, 131, 98);</string>
+         </property>
+         <property name="placeholderText">
+          <string>for future use</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QFrame" name="frame_3">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="search_line_edit">
+         <property name="toolTip">
+          <string>Search as you type</string>
+         </property>
+         <property name="placeholderText">
+          <string>Instant search - enter what you are looking for</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_del_search_line_edit">
+         <property name="toolTip">
+          <string>Clear instant search</string>
+         </property>
+         <property name="text">
+          <string>X</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2152</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File_2">
+    <property name="title">
+     <string>&amp;File  </string>
+    </property>
+    <addaction name="action_Quit_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_Maintenance_2">
+    <property name="title">
+     <string>&amp;Maintenance  </string>
+    </property>
+    <addaction name="action_Manufacturers_2"/>
+    <addaction name="actionM_ounts_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help_2">
+    <property name="title">
+     <string>&amp;Help  </string>
+    </property>
+    <addaction name="actionNo_help_available_2"/>
+   </widget>
+   <addaction name="menu_File_2"/>
+   <addaction name="menu_Maintenance_2"/>
+   <addaction name="menu_Help_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="action_Quit_2">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_Manufacturers">
+   <property name="text">
+    <string>&amp;Manufacturers        </string>
+   </property>
+  </action>
+  <action name="actionM_ounts">
+   <property name="text">
+    <string>M&amp;ounts        </string>
+   </property>
+  </action>
+  <action name="actionNo_help_available">
+   <property name="text">
+    <string>No help available</string>
+   </property>
+  </action>
+  <action name="action_Quit_3">
+   <property name="text">
+    <string>&amp;Quit        </string>
+   </property>
+  </action>
+  <action name="action_Manufacturers_2">
+   <property name="text">
+    <string>&amp;Manufacturers                        </string>
+   </property>
+  </action>
+  <action name="actionM_ounts_2">
+   <property name="text">
+    <string>M&amp;ounts                        </string>
+   </property>
+  </action>
+  <action name="actionNo_help_available_2">
+   <property name="text">
+    <string>No help available                        </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

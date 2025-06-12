@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MountTypesWindow</class>
+ <widget class="QMainWindow" name="MountTypesWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2217</width>
+    <height>1271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="1">
+     <widget class="QFrame" name="frame_quickselect">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTableView" name="tbl_quickview">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>460</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Plain</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pb_new">
+         <property name="toolTip">
+          <string>Add new manufacturer</string>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_save">
+         <property name="toolTip">
+          <string>Save current record</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Mount name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Throat or thread diameter</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="5">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Date created</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="9">
+        <widget class="QLineEdit" name="le_datechanged">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>10</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>260</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="9">
+        <widget class="QLineEdit" name="le_id"/>
+       </item>
+       <item row="4" column="5">
+        <widget class="QLineEdit" name="le_frame_size"/>
+       </item>
+       <item row="11" column="8">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Date changed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Frame size</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3" colspan="7">
+        <widget class="QPlainTextEdit" name="le_information"/>
+       </item>
+       <item row="6" column="3" colspan="7">
+        <widget class="QLineEdit" name="le_throat_or_thread_diameter"/>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="le_flange_focal_distance"/>
+       </item>
+       <item row="3" column="3" colspan="7">
+        <widget class="QLineEdit" name="le_mount_name"/>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Mount_type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLineEdit" name="le_mount_thread_pitch"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Flange focal distance</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Additional Information</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Order in list</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="6" colspan="2">
+        <widget class="QLineEdit" name="le_datecreated">
+         <property name="minimumSize">
+          <size>
+           <width>260</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLineEdit" name="le_toporder">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Mount thread pitch</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Camera lines</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3" colspan="7">
+        <widget class="QPlainTextEdit" name="le_camera_lines">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label_8">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>38</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 185, 88); </string>
+         </property>
+         <property name="text">
+          <string>Mount Types</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="8" colspan="2">
+        <widget class="QLineEdit" name="le_primary_use"/>
+       </item>
+       <item row="7" column="7">
+        <widget class="QLabel" name="label_14">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Primary use</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="5" colspan="2">
+        <widget class="QLineEdit" name="le_mount_type"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QFrame" name="frame_navigation">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_first">
+         <property name="toolTip">
+          <string>Goto first record</string>
+         </property>
+         <property name="text">
+          <string>  First</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::MediaSkipBackward"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_previous">
+         <property name="toolTip">
+          <string>Goto previous record</string>
+         </property>
+         <property name="text">
+          <string>  Previous</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::GoPrevious"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_next">
+         <property name="toolTip">
+          <string>Goto next record</string>
+         </property>
+         <property name="text">
+          <string>  Next  </string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::GoNext"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_last">
+         <property name="toolTip">
+          <string>Goto last record</string>
+         </property>
+         <property name="text">
+          <string>  Last</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::MediaSkipForward"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2217</width>
+     <height>38</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_Manufacturer">
+   <property name="text">
+    <string>&amp;Manufacturers</string>
+   </property>
+  </action>
+  <action name="actionM_ounts">
+   <property name="text">
+    <string>M&amp;ounts</string>
+   </property>
+  </action>
+  <action name="actionNo_help_available">
+   <property name="text">
+    <string>No help available</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>le_mount_name</tabstop>
+  <tabstop>le_throat_or_thread_diameter</tabstop>
+  <tabstop>le_mount_thread_pitch</tabstop>
+  <tabstop>le_information</tabstop>
+  <tabstop>le_toporder</tabstop>
+  <tabstop>le_datecreated</tabstop>
+  <tabstop>le_datechanged</tabstop>
+  <tabstop>pb_first</tabstop>
+  <tabstop>pb_previous</tabstop>
+  <tabstop>pb_next</tabstop>
+  <tabstop>pb_last</tabstop>
+  <tabstop>pb_new</tabstop>
+  <tabstop>pb_save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
