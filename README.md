@@ -1,6 +1,3 @@
 # Lens-Register
 Managing lenses and their properties - manufacturers and mounts.
-Lens-Register comes with its own database including around 50 lenses of different manufacturers but mostly Leica M Lenses.
-Other lenses can also be added. 
-Das Programm wird mit Python und Pyside6 entwickelt. Dies wiederum setzt auf das Qt-Framework auf. Alle Komponenten sind mit OpenSource Tools entwickelt - und so ist auch das Ergebnis.
-Alle Teile des Programms kommen ohne Gewährleistung auf irgendwelche Funktionalität. Ebenso wird keine Haftung für Schäden übernommen, die durch das Programm (ich wüsste nicht, wie) entstehen könnten.
+I recently started familiarising myself with Python. My aim was to rewrite a programme that I wrote in the distant past in a fairly unknown programming language using a more modern programming language. It should have a simple GUI and run locally (not a web app) and on all common operating systems. I decided in favour of Python 3.12 with PySide6 and the Qt framework. The data is all stored in a local database sqlite3. Custom lenses can be colour-coded and commented on. I reckon the need for such a programme is quite limited as it is not a web based application. You are cordially invited to take part in this project. You can either help programme and optimize it or simply add further ideas and a few more use cases.
