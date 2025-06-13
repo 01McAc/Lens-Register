@@ -4,5 +4,13 @@ I recently started familiarising myself with Python. My aim was to rewrite a pro
 So simply start main.py and you'll get a list of all lenses in the local database.
 ![Lereg1.jpg](images/Lereg1.jpg)
 
+Double-click the lens you want to see the details of.
+![Lereg2.jpg](images/Lereg2.jpg)
 
 
+
+All kinds and types of lenses can be entered. If a manufacturer is missing, this can be added.
+![Lereg3.jpg](images/Lereg3.jpg)
+
+There are heaps of mount types out there. If something is missing, this can be added either.
+![Lereg4.jpg](images/Lereg4.jpg)
