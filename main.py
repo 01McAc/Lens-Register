@@ -543,7 +543,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
     def set_combobox_delegates_mount(self, id):
         self.model_mount = QSqlRelationalTableModel(self)
         self.model_mount.setTable("Lenses")
-
+        sortby_column_toporder = 12     # column number 12
         # Beziehung zur Tabelle "Mounts" definieren
         mount_index = self.model_mount.fieldIndex("MountId")
         ##self.model_mount.setRelation(mount_index, QSqlRelation("Mounts", "ID", "MountName"))
@@ -566,6 +566,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
 
                 # ComboBox mit den Mount-Namen befüllen, aber die ID als UserRole setzen
                 self.cb_mount.setModel(model)
+                self.cb_mount.model().sort(sortby_column_toporder, Qt.AscendingOrder)
                 self.cb_mount.setModelColumn(model.fieldIndex("Mount_name"))
 
                 # Den passenden Index suchen basierend auf MountId (nicht Mount_name!)
@@ -587,7 +588,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
     def set_combobox_delegates_make(self, id):
         self.model_make = QSqlRelationalTableModel(self)
         self.model_make.setTable("Lenses")
-
+        sortby_column_toporder = 8
         # Beziehung zur Tabelle "Makers" definieren
         make_index = self.model_make.fieldIndex("MakerId")
         self.model_make.setRelation(make_index, QSqlRelation("Makers", "ID", "MakerName"))
@@ -611,6 +612,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
 
                 # ComboBox mit den Make-Namen befüllen, aber die ID als UserRole setzen
                 self.cb_make.setModel(model)
+                self.cb_make.model().sort(sortby_column_toporder, Qt.AscendingOrder)
                 self.cb_make.setModelColumn(model.fieldIndex("MakerName"))
 
                 # Den passenden Index suchen basierend auf MakeId (nicht MakerName!)
@@ -945,7 +947,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def get_data_tableview(self):
         db = QtSql.QSqlDatabase.addDatabase('QSQLITE')
-        db.setDatabaseName('lereg.sqlite')
+        db.setDatabaseName('/home/det/PycharmProjects/write_metadata/lereg.sqlite')
+        #db.setDatabaseName('lereg.sqlite')
         if not db.open():  # add this line to open the database
             print("Error: Could not open database")  # add error handling.
             return

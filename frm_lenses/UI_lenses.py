@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'UI_lenses.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.0
+## Created by: Qt User Interface Compiler version 6.10.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -27,6 +27,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(2152, 1059)
+        icon = QIcon()
+        icon.addFile(u"LensDB.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        MainWindow.setWindowIcon(icon)
         self.action_Quit = QAction(MainWindow)
         self.action_Quit.setObjectName(u"action_Quit")
         self.action_About = QAction(MainWindow)
@@ -123,7 +126,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 2152, 38))
+        self.menubar.setGeometry(QRect(0, 0, 2152, 45))
         self.menu_File_2 = QMenu(self.menubar)
         self.menu_File_2.setObjectName(u"menu_File_2")
         self.menu_Maintenance_2 = QMenu(self.menubar)

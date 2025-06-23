@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'UI_details.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.0
+## Created by: Qt User Interface Compiler version 6.10.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -522,193 +522,6 @@ class Ui_MainWindowDetails(object):
         self.frame_5.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_3 = QGridLayout(self.frame_5)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.cb_mount = QComboBox(self.frame_5)
-        self.cb_mount.setObjectName(u"cb_mount")
-
-        self.gridLayout_3.addWidget(self.cb_mount, 4, 1, 1, 2)
-
-        self.le_maxaperture = QLineEdit(self.frame_5)
-        self.le_maxaperture.setObjectName(u"le_maxaperture")
-
-        self.gridLayout_3.addWidget(self.le_maxaperture, 6, 5, 1, 1)
-
-        self.label_17 = QLabel(self.frame_5)
-        self.label_17.setObjectName(u"label_17")
-        self.label_17.setStyleSheet(u"color: rgb(0, 170, 255);")
-        self.label_17.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.label_17, 6, 6, 1, 1)
-
-        self.le_lensvariants = QPlainTextEdit(self.frame_5)
-        self.le_lensvariants.setObjectName(u"le_lensvariants")
-
-        self.gridLayout_3.addWidget(self.le_lensvariants, 27, 1, 1, 7)
-
-        self.label_25 = QLabel(self.frame_5)
-        self.label_25.setObjectName(u"label_25")
-        self.label_25.setStyleSheet(u"color: rgb(0, 170, 255);")
-        self.label_25.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
-        self.label_25.setWordWrap(True)
-
-        self.gridLayout_3.addWidget(self.label_25, 6, 4, 1, 1)
-
-        self.label_41 = QLabel(self.frame_5)
-        self.label_41.setObjectName(u"label_41")
-        self.label_41.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_41, 28, 0, 1, 1)
-
-        self.label_11 = QLabel(self.frame_5)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_11, 23, 0, 1, 1)
-
-        self.label_10 = QLabel(self.frame_5)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_10, 22, 0, 1, 1)
-
-        self.label_24 = QLabel(self.frame_5)
-        self.label_24.setObjectName(u"label_24")
-        self.label_24.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_24, 26, 0, 1, 1)
-
-        self.le_lens_coding = QLineEdit(self.frame_5)
-        self.le_lens_coding.setObjectName(u"le_lens_coding")
-
-        self.gridLayout_3.addWidget(self.le_lens_coding, 21, 1, 1, 7)
-
-        self.le_inscriptions = QLineEdit(self.frame_5)
-        self.le_inscriptions.setObjectName(u"le_inscriptions")
-
-        self.gridLayout_3.addWidget(self.le_inscriptions, 23, 1, 1, 8)
-
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout_3.addItem(self.verticalSpacer, 3, 1, 1, 1)
-
-        self.label_19 = QLabel(self.frame_5)
-        self.label_19.setObjectName(u"label_19")
-        self.label_19.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_19, 24, 0, 1, 1)
-
-        self.le_number_of_lenses_groups = QLineEdit(self.frame_5)
-        self.le_number_of_lenses_groups.setObjectName(u"le_number_of_lenses_groups")
-
-        self.gridLayout_3.addWidget(self.le_number_of_lenses_groups, 26, 1, 1, 1)
-
-        self.label_7 = QLabel(self.frame_5)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_7, 6, 0, 1, 1)
-
-        self.le_aperture = QLineEdit(self.frame_5)
-        self.le_aperture.setObjectName(u"le_aperture")
-
-        self.gridLayout_3.addWidget(self.le_aperture, 6, 1, 1, 3)
-
-        self.label_21 = QLabel(self.frame_5)
-        self.label_21.setObjectName(u"label_21")
-        self.label_21.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_21, 5, 0, 1, 1)
-
-        self.le_minaperture = QLineEdit(self.frame_5)
-        self.le_minaperture.setObjectName(u"le_minaperture")
-
-        self.gridLayout_3.addWidget(self.le_minaperture, 6, 7, 1, 1)
-
-        self.le_bayonet = QLineEdit(self.frame_5)
-        self.le_bayonet.setObjectName(u"le_bayonet")
-
-        self.gridLayout_3.addWidget(self.le_bayonet, 20, 1, 1, 7)
-
-        self.label_39 = QLabel(self.frame_5)
-        self.label_39.setObjectName(u"label_39")
-        self.label_39.setStyleSheet(u"color: rgb(0, 170, 255);")
-        self.label_39.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.label_39, 26, 2, 1, 1)
-
-        self.label_36 = QLabel(self.frame_5)
-        self.label_36.setObjectName(u"label_36")
-        self.label_36.setStyleSheet(u"color: rgb(0, 170, 255);")
-        self.label_36.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.label_36, 4, 4, 1, 1)
-
-        self.label_9 = QLabel(self.frame_5)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_9, 21, 0, 1, 1)
-
-        self.cb_r_lens_spec = QComboBox(self.frame_5)
-        self.cb_r_lens_spec.setObjectName(u"cb_r_lens_spec")
-
-        self.gridLayout_3.addWidget(self.cb_r_lens_spec, 26, 4, 1, 4)
-
-        self.cb_make = QComboBox(self.frame_5)
-        self.cb_make.setObjectName(u"cb_make")
-
-        self.gridLayout_3.addWidget(self.cb_make, 4, 5, 1, 3)
-
-        self.label_40 = QLabel(self.frame_5)
-        self.label_40.setObjectName(u"label_40")
-        self.label_40.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_40, 27, 0, 1, 1)
-
-        self.label_35 = QLabel(self.frame_5)
-        self.label_35.setObjectName(u"label_35")
-        self.label_35.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_35, 4, 0, 1, 1)
-
-        self.label_5 = QLabel(self.frame_5)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_5, 19, 0, 1, 1)
-
-        self.le_position_of_entrance_pupil = QLineEdit(self.frame_5)
-        self.le_position_of_entrance_pupil.setObjectName(u"le_position_of_entrance_pupil")
-
-        self.gridLayout_3.addWidget(self.le_position_of_entrance_pupil, 22, 1, 1, 8)
-
-        self.le_maximum_magnification = QLineEdit(self.frame_5)
-        self.le_maximum_magnification.setObjectName(u"le_maximum_magnification")
-
-        self.gridLayout_3.addWidget(self.le_maximum_magnification, 24, 5, 1, 3)
-
-        self.le_lenstype = QLineEdit(self.frame_5)
-        self.le_lenstype.setObjectName(u"le_lenstype")
-
-        self.gridLayout_3.addWidget(self.le_lenstype, 28, 1, 1, 7)
-
-        self.label_8 = QLabel(self.frame_5)
-        self.label_8.setObjectName(u"label_8")
-        self.label_8.setStyleSheet(u"color: rgb(0, 170, 255);")
-
-        self.gridLayout_3.addWidget(self.label_8, 20, 0, 1, 1)
-
-        self.label_20 = QLabel(self.frame_5)
-        self.label_20.setObjectName(u"label_20")
-        self.label_20.setStyleSheet(u"color: rgb(0, 170, 255);")
-        self.label_20.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.label_20, 24, 4, 1, 1)
-
-        self.le_lens_mount_description = QLineEdit(self.frame_5)
-        self.le_lens_mount_description.setObjectName(u"le_lens_mount_description")
-
-        self.gridLayout_3.addWidget(self.le_lens_mount_description, 5, 1, 1, 7)
-
         self.le_largest_diameter = QLineEdit(self.frame_5)
         self.le_largest_diameter.setObjectName(u"le_largest_diameter")
 
@@ -734,6 +547,21 @@ class Ui_MainWindowDetails(object):
 
         self.gridLayout_3.addWidget(self.frame_11, 2, 0, 1, 8)
 
+        self.lineEdit = QLineEdit(self.frame_5)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.gridLayout_3.addWidget(self.lineEdit, 19, 7, 1, 1)
+
+        self.le_lenstype = QLineEdit(self.frame_5)
+        self.le_lenstype.setObjectName(u"le_lenstype")
+
+        self.gridLayout_3.addWidget(self.le_lenstype, 28, 1, 1, 7)
+
+        self.le_maxaperture = QLineEdit(self.frame_5)
+        self.le_maxaperture.setObjectName(u"le_maxaperture")
+
+        self.gridLayout_3.addWidget(self.le_maxaperture, 6, 5, 1, 1)
+
         self.label_14 = QLabel(self.frame_5)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setStyleSheet(u"color: rgb(0, 170, 255);")
@@ -741,15 +569,140 @@ class Ui_MainWindowDetails(object):
 
         self.gridLayout_3.addWidget(self.label_14, 19, 4, 1, 1)
 
+        self.label_41 = QLabel(self.frame_5)
+        self.label_41.setObjectName(u"label_41")
+        self.label_41.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_41, 28, 0, 1, 1)
+
+        self.label_19 = QLabel(self.frame_5)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_19, 24, 0, 1, 1)
+
+        self.cb_make = QComboBox(self.frame_5)
+        self.cb_make.setObjectName(u"cb_make")
+
+        self.gridLayout_3.addWidget(self.cb_make, 4, 5, 1, 3)
+
+        self.le_lens_mount_description = QLineEdit(self.frame_5)
+        self.le_lens_mount_description.setObjectName(u"le_lens_mount_description")
+
+        self.gridLayout_3.addWidget(self.le_lens_mount_description, 5, 1, 1, 7)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_3.addItem(self.verticalSpacer, 3, 1, 1, 1)
+
+        self.le_inscriptions = QLineEdit(self.frame_5)
+        self.le_inscriptions.setObjectName(u"le_inscriptions")
+
+        self.gridLayout_3.addWidget(self.le_inscriptions, 23, 1, 1, 8)
+
+        self.le_lensvariants = QPlainTextEdit(self.frame_5)
+        self.le_lensvariants.setObjectName(u"le_lensvariants")
+
+        self.gridLayout_3.addWidget(self.le_lensvariants, 27, 1, 1, 7)
+
+        self.cb_r_lens_spec = QComboBox(self.frame_5)
+        self.cb_r_lens_spec.setObjectName(u"cb_r_lens_spec")
+
+        self.gridLayout_3.addWidget(self.cb_r_lens_spec, 26, 4, 1, 4)
+
+        self.label_25 = QLabel(self.frame_5)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_25.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+        self.label_25.setWordWrap(True)
+
+        self.gridLayout_3.addWidget(self.label_25, 6, 4, 1, 1)
+
+        self.label_9 = QLabel(self.frame_5)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_9, 21, 0, 1, 1)
+
+        self.cb_mount = QComboBox(self.frame_5)
+        self.cb_mount.setObjectName(u"cb_mount")
+
+        self.gridLayout_3.addWidget(self.cb_mount, 4, 1, 1, 2)
+
+        self.le_minaperture = QLineEdit(self.frame_5)
+        self.le_minaperture.setObjectName(u"le_minaperture")
+
+        self.gridLayout_3.addWidget(self.le_minaperture, 6, 7, 1, 1)
+
+        self.label_11 = QLabel(self.frame_5)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_11, 23, 0, 1, 1)
+
+        self.label_21 = QLabel(self.frame_5)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.frame_5)
+        self.label_39.setObjectName(u"label_39")
+        self.label_39.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_39.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.label_39, 26, 2, 1, 1)
+
+        self.label_10 = QLabel(self.frame_5)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_10, 22, 0, 1, 1)
+
+        self.label_24 = QLabel(self.frame_5)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_24, 26, 0, 1, 1)
+
+        self.label_7 = QLabel(self.frame_5)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_7, 6, 0, 1, 1)
+
+        self.le_number_of_lenses_groups = QLineEdit(self.frame_5)
+        self.le_number_of_lenses_groups.setObjectName(u"le_number_of_lenses_groups")
+
+        self.gridLayout_3.addWidget(self.le_number_of_lenses_groups, 26, 1, 1, 1)
+
+        self.le_lens_coding = QLineEdit(self.frame_5)
+        self.le_lens_coding.setObjectName(u"le_lens_coding")
+
+        self.gridLayout_3.addWidget(self.le_lens_coding, 21, 1, 1, 7)
+
         self.le_angle_of_view = QLineEdit(self.frame_5)
         self.le_angle_of_view.setObjectName(u"le_angle_of_view")
 
         self.gridLayout_3.addWidget(self.le_angle_of_view, 19, 5, 1, 1)
 
-        self.le_T_stop = QLineEdit(self.frame_5)
-        self.le_T_stop.setObjectName(u"le_T_stop")
+        self.le_aperture = QLineEdit(self.frame_5)
+        self.le_aperture.setObjectName(u"le_aperture")
 
-        self.gridLayout_3.addWidget(self.le_T_stop, 19, 1, 1, 3)
+        self.gridLayout_3.addWidget(self.le_aperture, 6, 1, 1, 3)
+
+        self.label_35 = QLabel(self.frame_5)
+        self.label_35.setObjectName(u"label_35")
+        self.label_35.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_35, 4, 0, 1, 1)
+
+        self.label_36 = QLabel(self.frame_5)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_36.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.label_36, 4, 4, 1, 1)
 
         self.label_15 = QLabel(self.frame_5)
         self.label_15.setObjectName(u"label_15")
@@ -757,10 +710,69 @@ class Ui_MainWindowDetails(object):
 
         self.gridLayout_3.addWidget(self.label_15, 19, 6, 1, 1)
 
-        self.lineEdit = QLineEdit(self.frame_5)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.le_position_of_entrance_pupil = QLineEdit(self.frame_5)
+        self.le_position_of_entrance_pupil.setObjectName(u"le_position_of_entrance_pupil")
 
-        self.gridLayout_3.addWidget(self.lineEdit, 19, 7, 1, 1)
+        self.gridLayout_3.addWidget(self.le_position_of_entrance_pupil, 22, 1, 1, 8)
+
+        self.le_maximum_magnification = QLineEdit(self.frame_5)
+        self.le_maximum_magnification.setObjectName(u"le_maximum_magnification")
+
+        self.gridLayout_3.addWidget(self.le_maximum_magnification, 24, 5, 1, 3)
+
+        self.label_20 = QLabel(self.frame_5)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_20.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.label_20, 24, 4, 1, 1)
+
+        self.label_17 = QLabel(self.frame_5)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_17.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.label_17, 6, 6, 1, 1)
+
+        self.label_40 = QLabel(self.frame_5)
+        self.label_40.setObjectName(u"label_40")
+        self.label_40.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_40, 27, 0, 1, 1)
+
+        self.le_bayonet = QLineEdit(self.frame_5)
+        self.le_bayonet.setObjectName(u"le_bayonet")
+
+        self.gridLayout_3.addWidget(self.le_bayonet, 20, 5, 1, 3)
+
+        self.label_8 = QLabel(self.frame_5)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setStyleSheet(u"color: rgb(0, 170, 255);")
+        self.label_8.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.label_8, 20, 4, 1, 1)
+
+        self.label_5 = QLabel(self.frame_5)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_5, 20, 0, 1, 1)
+
+        self.label_16 = QLabel(self.frame_5)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setStyleSheet(u"color: rgb(0, 170, 255);")
+
+        self.gridLayout_3.addWidget(self.label_16, 19, 0, 1, 1)
+
+        self.le_no_of_blades = QLineEdit(self.frame_5)
+        self.le_no_of_blades.setObjectName(u"le_no_of_blades")
+
+        self.gridLayout_3.addWidget(self.le_no_of_blades, 19, 1, 1, 3)
+
+        self.le_t_stop = QLineEdit(self.frame_5)
+        self.le_t_stop.setObjectName(u"le_t_stop")
+
+        self.gridLayout_3.addWidget(self.le_t_stop, 20, 1, 1, 3)
 
 
         self.gridLayout_4.addWidget(self.frame_5, 0, 0, 1, 1)
@@ -1765,7 +1777,7 @@ class Ui_MainWindowDetails(object):
         MainWindowDetails.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindowDetails)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 2915, 38))
+        self.menubar.setGeometry(QRect(0, 0, 2915, 45))
         MainWindowDetails.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindowDetails)
         self.statusbar.setObjectName(u"statusbar")
@@ -2006,37 +2018,38 @@ class Ui_MainWindowDetails(object):
         self.le_compatibility.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"Lenses are compatible with these cameras", None))
         self.label_83.setText(QCoreApplication.translate("MainWindowDetails", u"Overview", None))
         self.tab_all_details.setTabText(self.tab_all_details.indexOf(self.tb_overview), QCoreApplication.translate("MainWindowDetails", u"Overview", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindowDetails", u"Geometry", None))
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"No of blades", None))
         self.le_maxaperture.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. 2.0", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindowDetails", u"Min", None))
-        self.label_25.setText(QCoreApplication.translate("MainWindowDetails", u"Max aperture", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindowDetails", u"Angle of view", None))
         self.label_41.setText(QCoreApplication.translate("MainWindowDetails", u"Type / Optical formulae", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindowDetails", u"Diameter, largest", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindowDetails", u"Max aperture", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindowDetails", u"Coding", None))
+        self.le_minaperture.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. 16.0", None))
         self.label_11.setText(QCoreApplication.translate("MainWindowDetails", u"Inscriptions", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindowDetails", u"Mount description", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindowDetails", u"R lens spec", None))
         self.label_10.setText(QCoreApplication.translate("MainWindowDetails", u"Pos. of entrance pupil", None))
         self.label_24.setText(QCoreApplication.translate("MainWindowDetails", u"No of lenses/groups", None))
-        self.label_19.setText(QCoreApplication.translate("MainWindowDetails", u"Diameter, largest", None))
         self.label_7.setText(QCoreApplication.translate("MainWindowDetails", u"Aperture (text)", None))
         self.le_aperture.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. f/1.4 - f/22", None))
-        self.label_21.setText(QCoreApplication.translate("MainWindowDetails", u"Mount description", None))
-        self.le_minaperture.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. 16.0", None))
-        self.label_39.setText(QCoreApplication.translate("MainWindowDetails", u"R lens spec", None))
-        self.label_36.setText(QCoreApplication.translate("MainWindowDetails", u"Lens make", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindowDetails", u"Coding", None))
-        self.label_40.setText(QCoreApplication.translate("MainWindowDetails", u"Variants", None))
         self.label_35.setText(QCoreApplication.translate("MainWindowDetails", u"Mount", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindowDetails", u"T-Stop", None))
-        self.label_8.setText(QCoreApplication.translate("MainWindowDetails", u"Bayonet", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindowDetails", u"Lens make", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindowDetails", u"Blades", None))
         self.label_20.setText(QCoreApplication.translate("MainWindowDetails", u"Magnification, max", None))
-        self.label_37.setText(QCoreApplication.translate("MainWindowDetails", u"Geometry", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindowDetails", u"Angle of view", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindowDetails", u"Min", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindowDetails", u"Variants", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindowDetails", u"Bayonet", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindowDetails", u"T-Stop", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindowDetails", u"No of blades", None))
 #if QT_CONFIG(tooltip)
-        self.le_T_stop.setToolTip(QCoreApplication.translate("MainWindowDetails", u"The actual amount of light that passes through the lens and reaches the film or sensor in a camera.", None))
+        self.le_t_stop.setToolTip(QCoreApplication.translate("MainWindowDetails", u"The actual amount of light that passes through the lens and reaches the film or sensor in a camera.", None))
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(statustip)
-        self.le_T_stop.setStatusTip(QCoreApplication.translate("MainWindowDetails", u"The actual amount of light that passes through the lens and reaches the film or sensor in a camera.", None))
+        self.le_t_stop.setStatusTip(QCoreApplication.translate("MainWindowDetails", u"The actual amount of light that passes through the lens and reaches the film or sensor in a camera.", None))
 #endif // QT_CONFIG(statustip)
-        self.le_T_stop.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. T2.2", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindowDetails", u"Blades", None))
-        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"No of blades", None))
+        self.le_t_stop.setPlaceholderText(QCoreApplication.translate("MainWindowDetails", u"e.g. T2.2", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindowDetails", u"PushButton - reserved for future functionality", None))
         self.tab_all_details.setTabText(self.tab_all_details.indexOf(self.tb_focal), QCoreApplication.translate("MainWindowDetails", u"Geometry", None))
         self.label_6.setText(QCoreApplication.translate("MainWindowDetails", u"Miscellaneous", None))

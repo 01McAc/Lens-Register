@@ -979,264 +979,6 @@ This refers to the ratio of the size of the object on the image sensor to the ac
                     <enum>QFrame::Shadow::Raised</enum>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_3">
-                    <item row="4" column="1" colspan="2">
-                     <widget class="QComboBox" name="cb_mount"/>
-                    </item>
-                    <item row="6" column="5">
-                     <widget class="QLineEdit" name="le_maxaperture">
-                      <property name="placeholderText">
-                       <string>e.g. 2.0</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="6" column="6">
-                     <widget class="QLabel" name="label_17">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Min</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="27" column="1" colspan="7">
-                     <widget class="QPlainTextEdit" name="le_lensvariants"/>
-                    </item>
-                    <item row="6" column="4">
-                     <widget class="QLabel" name="label_25">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Max aperture</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="28" column="0">
-                     <widget class="QLabel" name="label_41">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Type / Optical formulae</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="23" column="0">
-                     <widget class="QLabel" name="label_11">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Inscriptions</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="22" column="0">
-                     <widget class="QLabel" name="label_10">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Pos. of entrance pupil</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="26" column="0">
-                     <widget class="QLabel" name="label_24">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>No of lenses/groups</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="21" column="1" colspan="7">
-                     <widget class="QLineEdit" name="le_lens_coding"/>
-                    </item>
-                    <item row="23" column="1" colspan="8">
-                     <widget class="QLineEdit" name="le_inscriptions"/>
-                    </item>
-                    <item row="3" column="1">
-                     <spacer name="verticalSpacer">
-                      <property name="orientation">
-                       <enum>Qt::Orientation::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item row="24" column="0">
-                     <widget class="QLabel" name="label_19">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Diameter, largest</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="26" column="1">
-                     <widget class="QLineEdit" name="le_number_of_lenses_groups"/>
-                    </item>
-                    <item row="6" column="0">
-                     <widget class="QLabel" name="label_7">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Aperture (text)</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="6" column="1" colspan="3">
-                     <widget class="QLineEdit" name="le_aperture">
-                      <property name="placeholderText">
-                       <string>e.g. f/1.4 - f/22</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="5" column="0">
-                     <widget class="QLabel" name="label_21">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Mount description</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="6" column="7">
-                     <widget class="QLineEdit" name="le_minaperture">
-                      <property name="placeholderText">
-                       <string>e.g. 16.0</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="20" column="1" colspan="7">
-                     <widget class="QLineEdit" name="le_bayonet"/>
-                    </item>
-                    <item row="26" column="2">
-                     <widget class="QLabel" name="label_39">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>R lens spec</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="4" column="4">
-                     <widget class="QLabel" name="label_36">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Lens make</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="21" column="0">
-                     <widget class="QLabel" name="label_9">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Coding</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="26" column="4" colspan="4">
-                     <widget class="QComboBox" name="cb_r_lens_spec"/>
-                    </item>
-                    <item row="4" column="5" colspan="3">
-                     <widget class="QComboBox" name="cb_make"/>
-                    </item>
-                    <item row="27" column="0">
-                     <widget class="QLabel" name="label_40">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Variants</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="4" column="0">
-                     <widget class="QLabel" name="label_35">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Mount</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="19" column="0">
-                     <widget class="QLabel" name="label_5">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>T-Stop</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="22" column="1" colspan="8">
-                     <widget class="QLineEdit" name="le_position_of_entrance_pupil"/>
-                    </item>
-                    <item row="24" column="5" colspan="3">
-                     <widget class="QLineEdit" name="le_maximum_magnification"/>
-                    </item>
-                    <item row="28" column="1" colspan="7">
-                     <widget class="QLineEdit" name="le_lenstype"/>
-                    </item>
-                    <item row="20" column="0">
-                     <widget class="QLabel" name="label_8">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Bayonet</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="24" column="4">
-                     <widget class="QLabel" name="label_20">
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(0, 170, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>Magnification, max</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="5" column="1" colspan="7">
-                     <widget class="QLineEdit" name="le_lens_mount_description"/>
-                    </item>
                     <item row="24" column="1">
                      <widget class="QLineEdit" name="le_largest_diameter"/>
                     </item>
@@ -1269,6 +1011,23 @@ This refers to the ratio of the size of the object on the image sensor to the ac
                       </layout>
                      </widget>
                     </item>
+                    <item row="19" column="7">
+                     <widget class="QLineEdit" name="lineEdit">
+                      <property name="placeholderText">
+                       <string>No of blades</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="28" column="1" colspan="7">
+                     <widget class="QLineEdit" name="le_lenstype"/>
+                    </item>
+                    <item row="6" column="5">
+                     <widget class="QLineEdit" name="le_maxaperture">
+                      <property name="placeholderText">
+                       <string>e.g. 2.0</string>
+                      </property>
+                     </widget>
+                    </item>
                     <item row="19" column="4">
                      <widget class="QLabel" name="label_14">
                       <property name="styleSheet">
@@ -1282,19 +1041,189 @@ This refers to the ratio of the size of the object on the image sensor to the ac
                       </property>
                      </widget>
                     </item>
+                    <item row="28" column="0">
+                     <widget class="QLabel" name="label_41">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Type / Optical formulae</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="24" column="0">
+                     <widget class="QLabel" name="label_19">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Diameter, largest</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="5" colspan="3">
+                     <widget class="QComboBox" name="cb_make"/>
+                    </item>
+                    <item row="5" column="1" colspan="7">
+                     <widget class="QLineEdit" name="le_lens_mount_description"/>
+                    </item>
+                    <item row="3" column="1">
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Orientation::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="23" column="1" colspan="8">
+                     <widget class="QLineEdit" name="le_inscriptions"/>
+                    </item>
+                    <item row="27" column="1" colspan="7">
+                     <widget class="QPlainTextEdit" name="le_lensvariants"/>
+                    </item>
+                    <item row="26" column="4" colspan="4">
+                     <widget class="QComboBox" name="cb_r_lens_spec"/>
+                    </item>
+                    <item row="6" column="4">
+                     <widget class="QLabel" name="label_25">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Max aperture</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="21" column="0">
+                     <widget class="QLabel" name="label_9">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Coding</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1" colspan="2">
+                     <widget class="QComboBox" name="cb_mount"/>
+                    </item>
+                    <item row="6" column="7">
+                     <widget class="QLineEdit" name="le_minaperture">
+                      <property name="placeholderText">
+                       <string>e.g. 16.0</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="23" column="0">
+                     <widget class="QLabel" name="label_11">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Inscriptions</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_21">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Mount description</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="26" column="2">
+                     <widget class="QLabel" name="label_39">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>R lens spec</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="22" column="0">
+                     <widget class="QLabel" name="label_10">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Pos. of entrance pupil</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="26" column="0">
+                     <widget class="QLabel" name="label_24">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>No of lenses/groups</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_7">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Aperture (text)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="26" column="1">
+                     <widget class="QLineEdit" name="le_number_of_lenses_groups"/>
+                    </item>
+                    <item row="21" column="1" colspan="7">
+                     <widget class="QLineEdit" name="le_lens_coding"/>
+                    </item>
                     <item row="19" column="5">
                      <widget class="QLineEdit" name="le_angle_of_view"/>
                     </item>
-                    <item row="19" column="1" colspan="3">
-                     <widget class="QLineEdit" name="le_T_stop">
-                      <property name="toolTip">
-                       <string>The actual amount of light that passes through the lens and reaches the film or sensor in a camera.</string>
-                      </property>
-                      <property name="statusTip">
-                       <string>The actual amount of light that passes through the lens and reaches the film or sensor in a camera.</string>
-                      </property>
+                    <item row="6" column="1" colspan="3">
+                     <widget class="QLineEdit" name="le_aperture">
                       <property name="placeholderText">
-                       <string>e.g. T2.2</string>
+                       <string>e.g. f/1.4 - f/22</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_35">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Mount</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="4">
+                     <widget class="QLabel" name="label_36">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Lens make</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -1308,10 +1237,97 @@ This refers to the ratio of the size of the object on the image sensor to the ac
                       </property>
                      </widget>
                     </item>
-                    <item row="19" column="7">
-                     <widget class="QLineEdit" name="lineEdit">
-                      <property name="placeholderText">
+                    <item row="22" column="1" colspan="8">
+                     <widget class="QLineEdit" name="le_position_of_entrance_pupil"/>
+                    </item>
+                    <item row="24" column="5" colspan="3">
+                     <widget class="QLineEdit" name="le_maximum_magnification"/>
+                    </item>
+                    <item row="24" column="4">
+                     <widget class="QLabel" name="label_20">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Magnification, max</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="6">
+                     <widget class="QLabel" name="label_17">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Min</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="27" column="0">
+                     <widget class="QLabel" name="label_40">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Variants</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="20" column="5" colspan="3">
+                     <widget class="QLineEdit" name="le_bayonet"/>
+                    </item>
+                    <item row="20" column="4">
+                     <widget class="QLabel" name="label_8">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Bayonet</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="20" column="0">
+                     <widget class="QLabel" name="label_5">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>T-Stop</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="19" column="0">
+                     <widget class="QLabel" name="label_16">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 170, 255);</string>
+                      </property>
+                      <property name="text">
                        <string>No of blades</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="19" column="1" colspan="3">
+                     <widget class="QLineEdit" name="le_no_of_blades"/>
+                    </item>
+                    <item row="20" column="1" colspan="3">
+                     <widget class="QLineEdit" name="le_t_stop">
+                      <property name="toolTip">
+                       <string>The actual amount of light that passes through the lens and reaches the film or sensor in a camera.</string>
+                      </property>
+                      <property name="statusTip">
+                       <string>The actual amount of light that passes through the lens and reaches the film or sensor in a camera.</string>
+                      </property>
+                      <property name="placeholderText">
+                       <string>e.g. T2.2</string>
                       </property>
                      </widget>
                     </item>
@@ -3065,7 +3081,7 @@ color: rgb(0, 170, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>2915</width>
-     <height>38</height>
+     <height>45</height>
     </rect>
    </property>
   </widget>
