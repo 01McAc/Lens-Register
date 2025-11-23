@@ -16,11 +16,11 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
-    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
-    QMainWindow, QMenu, QMenuBar, QPushButton,
-    QSizePolicy, QSpacerItem, QStatusBar, QTableView,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
+    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+    QLineEdit, QMainWindow, QMenu, QMenuBar,
+    QPushButton, QSizePolicy, QSpacerItem, QStatusBar,
+    QTableView, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -65,6 +65,11 @@ class Ui_MainWindow(object):
         self.tbl_all_lenses.setAlternatingRowColors(True)
 
         self.gridLayout.addWidget(self.tbl_all_lenses, 1, 0, 1, 1)
+
+        self.checkBox_mylenses = QCheckBox(self.frame1)
+        self.checkBox_mylenses.setObjectName(u"checkBox_mylenses")
+
+        self.gridLayout.addWidget(self.checkBox_mylenses, 0, 0, 1, 1)
 
 
         self.gridLayout_2.addWidget(self.frame1, 5, 0, 1, 1)
@@ -163,6 +168,7 @@ class Ui_MainWindow(object):
         self.action_Manufacturers_2.setText(QCoreApplication.translate("MainWindow", u"&Manufacturers                        ", None))
         self.actionM_ounts_2.setText(QCoreApplication.translate("MainWindow", u"M&ounts                        ", None))
         self.actionNo_help_available_2.setText(QCoreApplication.translate("MainWindow", u"No help available                        ", None))
+        self.checkBox_mylenses.setText(QCoreApplication.translate("MainWindow", u"Show only my lenses (colored)", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Lenses", None))
 #if QT_CONFIG(tooltip)
         self.pb_reset_sort.setToolTip(QCoreApplication.translate("MainWindow", u"Reset sorting to default", None))

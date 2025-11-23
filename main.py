@@ -813,6 +813,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.action_Manufacturers_2.triggered.connect(self.open_frm_manufacturers)
         self.actionM_ounts_2.triggered.connect(self.open_frm_mount_types)
         self.action_Quit_3.triggered.connect(self.quit_app)
+        self.checkBox_mylenses.stateChanged.connect(self.onStateChanged)
         self.actionNo_help_available_2.triggered.connect(self.app_help)
         self.pb_reset_sort.clicked.connect(self.reset_sort)
 
@@ -823,6 +824,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.search_line_edit.textChanged.connect(self.filter_table)
         self.pb_del_search_line_edit.clicked.connect(self.clear_search_line)
         self.search_line_edit.setFocus()
+
+    def onStateChanged(self):
+        if self.checkBox_mylenses.isChecked():
+            print ('checked')
+            self.getonly_myownlenses()
+            self.search_line_edit.setEnabled(False)
+        else:
+            print ('unchecked')
+            #self.search_line_edit.setText('')
+            self.clear_search_line()
+            self.filter_table('')
+            self.search_line_edit.setEnabled(True)
+
+        #self.search_line_edit.textChanged.connect(self.filter_table)
+        #self.checkBox_mylenses.stateChanged.connect(self.onStateChanged)
+        #QTimer.singleShot(2000, self.clear_search_line)
 
     def open_frm_mount_types(self):
         # Erstellen Sie eine Instanz IHRER KLASSE, die das Fenster darstellt
@@ -876,14 +893,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def set_contextmenu(self):
         # Kontextmenü erstellen
         self.context_menu = CustomMenu(self)
+        self.context_menu.setMinimumWidth(350)
         self.action_details = QAction("Details", self)
         self.action_setcolor = QAction("Set Color", self)
+        self.action_resetcolor = QAction("Reset Color to None", self)
         self.context_menu.addAction(self.action_details)
         self.context_menu.addAction(self.action_setcolor)
+        self.context_menu.addAction(self.action_resetcolor)
 
         # Kontextmenü-Aktionen verbinden
         self.action_details.triggered.connect(self.opendetails)
         self.action_setcolor.triggered.connect(self.opencolors)
+        self.action_resetcolor.triggered.connect(self.resetcolors)  # resetcolors
 
         # Kontextmenü mit tableView verbinden
         self.tbl_all_lenses.setContextMenuPolicy(Qt.CustomContextMenu)
@@ -910,10 +931,26 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.details_window.set_id(settings.glob_id)  # ID übergeben
         self.details_window.show()
 
+    def get_distictcolors(self, dialog):
+        i = 0
+        for i in range(14):
+            dialog.setCustomColor(i, '#ffffff')
+
+        query_colors = QSqlQuery()
+        mysql = "SELECT distinct(Row_colour) from Lenses where Row_colour is not NULL"
+        query_colors.exec(mysql)
+        i = 0
+        while query_colors.next():
+            print(query_colors.value('Row_colour'))
+            dialog.setCustomColor(i,query_colors.value('Row_colour'))
+            i += 1
+
     def opencolors(self):
+
         layout = QGridLayout()
         self.setLayout(layout)
         dialog = QColorDialog()
+        self.get_distictcolors(dialog)
         dialog.setSizeGripEnabled(True)
         #dialog.layout().setSizeConstraint(QLayout.SetNoConstraint)
 
@@ -925,11 +962,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if settings.glob_id == None:
                 return
             else:
-                sql_stmt = f'''Update Lenses set Row_colour ='{color.name()}' WHERE id={settings.glob_id} '''
+                sql_stmt = f'''Update Lenses set Row_colour ='{color.name().lower()}' WHERE id={settings.glob_id} '''
                 print('UPDATE sql_stmt: ', sql_stmt)
                 insertDataQuery = QSqlQuery()
                 insertDataQuery.exec(sql_stmt)
                 self.refresh_tableview()
+
+    def resetcolors(self):
+        sql_stmt = f'''Update Lenses set Row_colour = NULL WHERE id={settings.glob_id} '''
+        print('UPDATE sql_stmt: ', sql_stmt)
+        insertDataQuery = QSqlQuery()
+        insertDataQuery.exec(sql_stmt)
+        self.refresh_tableview()
 
     def set_frontimage(self):
         path = 'images/front.jpg'
@@ -943,7 +987,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             print(f'Error: {e}')
             self.lb_frontimage.clear()
 
-
+    def getonly_myownlenses(self):
+        filter_query = f"""
+                Select Lenses.ID, Lenses.LensLabel, Lenses.MaxAperture, Lenses.MinAperture, Lenses.FocalLength, Mount_types.Mount_name, Lenses.Production_era,
+                Lenses.Row_colour from
+                Lenses INNER JOIN Mount_types on Mount_types.ID=Lenses.MountId
+                WHERE Lenses.Row_Colour is not NULL
+                """
+        self.model.setQuery(filter_query)
 
     def get_data_tableview(self):
         db = QtSql.QSqlDatabase.addDatabase('QSQLITE')
@@ -1011,6 +1062,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def filter_table(self, text):
         # Filter the table based on the search text
+        print (f'Pressed: {text}')
+        self.checkBox_mylenses.setChecked(False)
         filter_query = f"""
         Select Lenses.ID, Lenses.LensLabel, Lenses.MaxAperture, Lenses.MinAperture, Lenses.FocalLength, Mount_types.Mount_name, Lenses.Production_era,
         Lenses.Row_colour from

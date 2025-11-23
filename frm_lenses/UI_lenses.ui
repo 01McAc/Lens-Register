@@ -35,6 +35,13 @@
          </property>
         </widget>
        </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="checkBox_mylenses">
+         <property name="text">
+          <string>Show only my lenses (colored)</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
     </item>
