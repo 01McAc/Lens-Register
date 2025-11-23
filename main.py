@@ -591,7 +591,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
         sortby_column_toporder = 8
         # Beziehung zur Tabelle "Makers" definieren
         make_index = self.model_make.fieldIndex("MakerId")
-        self.model_make.setRelation(make_index, QSqlRelation("Makers", "ID", "MakerName"))
+        self.model_make.setRelation(make_index, QSqlRelation("Makers_view", "ID", "MakerName"))
         self.model_make.select()
 
         # Das relationModel holen
@@ -612,7 +612,7 @@ class MainWindowDetails(QMainWindow, Ui_MainWindowDetails):
 
                 # ComboBox mit den Make-Namen befüllen, aber die ID als UserRole setzen
                 self.cb_make.setModel(model)
-                self.cb_make.model().sort(sortby_column_toporder, Qt.AscendingOrder)
+                #self.cb_make.model().sort(sortby_column_toporder, Qt.AscendingOrder)
                 self.cb_make.setModelColumn(model.fieldIndex("MakerName"))
 
                 # Den passenden Index suchen basierend auf MakeId (nicht MakerName!)
@@ -933,11 +933,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def get_distictcolors(self, dialog):
         i = 0
-        for i in range(14):
+        for i in range(15):
             dialog.setCustomColor(i, '#ffffff')
 
         query_colors = QSqlQuery()
-        mysql = "SELECT distinct(Row_colour) from Lenses where Row_colour is not NULL"
+        mysql = "SELECT distinct(lower(Row_colour)) Row_colour from Lenses where Row_colour is not NULL"
         query_colors.exec(mysql)
         i = 0
         while query_colors.next():
@@ -992,6 +992,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 Lenses.Row_colour from
                 Lenses INNER JOIN Mount_types on Mount_types.ID=Lenses.MountId
                 WHERE Lenses.Row_Colour is not NULL
+                ORDER BY FocalLength_sort, LensLabel
                 """
         self.model.setQuery(filter_query)
 
@@ -1005,7 +1006,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         '''self.model = QSqlQueryModel(self)
         self.model.setQuery('Select Lenses.ID, Lenses.LensLabel, Lenses.MaxAperture, Lenses.MinAperture, Lenses.FocalLength, Mounts.MountName, Lenses.Production_era, '
                             'Lenses.Row_colour from '
-                            'Lenses INNER JOIN Mounts on Mounts.ID=Lenses.MountId ORDER by Lenses.FocalLength_sort')
+                            'Lenses INNER JOIN Mounts on Mounts.ID=Lenses.MountId ORDER by Lenses.FocalLength_sort, '
+                             'LensLabel')
         # Model dem QTableView zuweisen
         self.tbl_all_lenses.setModel(self.model)
         '''

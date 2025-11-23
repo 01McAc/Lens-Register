@@ -104,7 +104,7 @@ class MANUFACTURERS_manager(QMainWindow, Ui_ManufacturersWindow):
 
         # Basic information table "Makers"
         self.model = QSqlTableModel()
-        self.model.setTable("Makers")
+        self.model.setTable("Makers_view")
         #self.model.setEditStrategy(QSqlTableModel.EditStrategy.OnManualSubmit)
         self.model.setEditStrategy(QSqlTableModel.EditStrategy.OnFieldChange)
         self.model.select()
