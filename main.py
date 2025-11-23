@@ -946,7 +946,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             i += 1
 
     def opencolors(self):
-
         layout = QGridLayout()
         self.setLayout(layout)
         dialog = QColorDialog()
