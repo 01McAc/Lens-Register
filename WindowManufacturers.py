@@ -104,7 +104,8 @@ class MANUFACTURERS_manager(QMainWindow, Ui_ManufacturersWindow):
 
         # Basic information table "Makers"
         self.model = QSqlTableModel()
-        self.model.setTable("Makers_view")
+        #self.model.setTable("Makers_view") # not updateable
+        self.model.setTable("Makers")
         #self.model.setEditStrategy(QSqlTableModel.EditStrategy.OnManualSubmit)
         self.model.setEditStrategy(QSqlTableModel.EditStrategy.OnFieldChange)
         self.model.select()
@@ -131,7 +132,7 @@ class MANUFACTURERS_manager(QMainWindow, Ui_ManufacturersWindow):
 
         header = self.tbl_quickview.horizontalHeader()
         header.hideSection(0)  # Spalte 0 ausblenden: ID
-        x = range(2, 9)
+        x = range(2, 14)
         for i in x:
             header.hideSection(i)
 

@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'UI_lenses.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.10.0
+## Created by: Qt User Interface Compiler version 6.10.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -64,12 +64,30 @@ class Ui_MainWindow(object):
         self.tbl_all_lenses.setObjectName(u"tbl_all_lenses")
         self.tbl_all_lenses.setAlternatingRowColors(True)
 
-        self.gridLayout.addWidget(self.tbl_all_lenses, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.tbl_all_lenses, 3, 0, 1, 1)
 
-        self.checkBox_mylenses = QCheckBox(self.frame1)
+        self.frame_chkbox_reset = QFrame(self.frame1)
+        self.frame_chkbox_reset.setObjectName(u"frame_chkbox_reset")
+        self.frame_chkbox_reset.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_chkbox_reset.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_chkbox_reset)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.checkBox_mylenses = QCheckBox(self.frame_chkbox_reset)
         self.checkBox_mylenses.setObjectName(u"checkBox_mylenses")
 
-        self.gridLayout.addWidget(self.checkBox_mylenses, 0, 0, 1, 1)
+        self.horizontalLayout.addWidget(self.checkBox_mylenses)
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer_2)
+
+        self.pb_reset_sort = QPushButton(self.frame_chkbox_reset)
+        self.pb_reset_sort.setObjectName(u"pb_reset_sort")
+
+        self.horizontalLayout.addWidget(self.pb_reset_sort)
+
+
+        self.gridLayout.addWidget(self.frame_chkbox_reset, 0, 0, 1, 1)
 
 
         self.gridLayout_2.addWidget(self.frame1, 5, 0, 1, 1)
@@ -94,15 +112,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addItem(self.horizontalSpacer)
 
-        self.pb_reset_sort = QPushButton(self.frame_2)
-        self.pb_reset_sort.setObjectName(u"pb_reset_sort")
+        self.label_2 = QLabel(self.frame_2)
+        self.label_2.setObjectName(u"label_2")
 
-        self.horizontalLayout_2.addWidget(self.pb_reset_sort)
+        self.horizontalLayout_2.addWidget(self.label_2)
 
         self.cmb_select = QComboBox(self.frame_2)
         self.cmb_select.setObjectName(u"cmb_select")
         self.cmb_select.setMinimumSize(QSize(200, 0))
-        self.cmb_select.setStyleSheet(u"color: rgb(131, 131, 98);")
 
         self.horizontalLayout_2.addWidget(self.cmb_select)
 
@@ -169,12 +186,13 @@ class Ui_MainWindow(object):
         self.actionM_ounts_2.setText(QCoreApplication.translate("MainWindow", u"M&ounts                        ", None))
         self.actionNo_help_available_2.setText(QCoreApplication.translate("MainWindow", u"No help available                        ", None))
         self.checkBox_mylenses.setText(QCoreApplication.translate("MainWindow", u"Show only my lenses (colored)", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Lenses", None))
 #if QT_CONFIG(tooltip)
         self.pb_reset_sort.setToolTip(QCoreApplication.translate("MainWindow", u"Reset sorting to default", None))
 #endif // QT_CONFIG(tooltip)
         self.pb_reset_sort.setText(QCoreApplication.translate("MainWindow", u"Reset", None))
-        self.cmb_select.setPlaceholderText(QCoreApplication.translate("MainWindow", u"for future use", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Lenses", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Stats", None))
+        self.cmb_select.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Please select ...", None))
 #if QT_CONFIG(tooltip)
         self.search_line_edit.setToolTip(QCoreApplication.translate("MainWindow", u"Search as you type", None))
 #endif // QT_CONFIG(tooltip)

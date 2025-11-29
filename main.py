@@ -25,13 +25,13 @@ from WindowMountTypes import MOUNT_TYPE_manager
 from frm_lenses.UI_lenses import Ui_MainWindow
 from frm_lensdetails.UI_details import Ui_MainWindowDetails
 from frm_maker.UI_manufacturer import Ui_ManufacturersWindow
-from purchase_data_manager import PURCHASE_DataManager
 from sales_detail_data_manager import Sale_DataManager  # Importiere die Detaildaten-Klasse
 from serial_numbers_data_manager import Serial_Numbers_DataManager
 from cla_data_manager import CLA_DataManager
 from purchase_data_manager import PURCHASE_DataManager
 #from frm_maker.UI_manufacturer import Ui_ManufacturersWindow
 from WindowManufacturers import MANUFACTURERS_manager
+import statslenses
 
 settings.init()
 
@@ -825,6 +825,34 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pb_del_search_line_edit.clicked.connect(self.clear_search_line)
         self.search_line_edit.setFocus()
 
+        self.cmb_select.addItem('Focal Length: all')
+        self.cmb_select.addItem('Focal Length: only own lenses')
+        self.cmb_select.addItem('Max Aperture: all')
+        self.cmb_select.addItem('Max Aperture: only own lenses')
+        self.cmb_select.currentTextChanged.connect(self.cmb_select_changed)
+
+    def cmb_select_changed(self):
+        if self.cmb_select.currentIndex() == 0:
+            mysql = """select count(ID) No, FocalLength FROM Lenses WHERE LensLabel not Like '%Test%' GROUP BY FocalLength_sort"""
+            charttitle = 'All lenses in the database'
+            var_xlabel = 'Focal Length'
+        elif self.cmb_select.currentIndex() == 1:
+            mysql = """select  Count(ID) No, FocalLength FROM Lenses where Row_colour not NULL AND LensLabel not Like '%Test%' Group by FocalLength"""
+            charttitle = 'Number of my lenses per focal length'
+            var_xlabel = 'Focal Length'
+        elif self.cmb_select.currentIndex() == 2:
+            mysql = """select  Count(ID) No, MaxAperture FROM Lenses WHERE LensLabel not Like '%Test%' Group by MaxAperture"""
+            charttitle = 'Number of my lenses per Max Aperture'
+            var_xlabel = 'Max Aperture'
+        elif self.cmb_select.currentIndex() == 3:
+            mysql = """select  Count(ID) No, MaxAperture FROM Lenses where Row_colour not NULL AND LensLabel not Like '%Test%' Group by MaxAperture"""
+            charttitle = 'Number of my lenses per Max Aperture'
+            var_xlabel = 'Max Aperture'
+        else:
+            pass
+        statslenses.MainWindowStats(mysql, charttitle, var_xlabel)
+        print('cmb_select_changed: ', self.cmb_select.currentIndex(), ' ', self.cmb_select.currentText())
+
     def onStateChanged(self):
         if self.checkBox_mylenses.isChecked():
             print ('checked')
@@ -941,7 +969,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         query_colors.exec(mysql)
         i = 0
         while query_colors.next():
-            print(query_colors.value('Row_colour'))
+            print('Farbe: ', query_colors.value('Row_colour'))
             dialog.setCustomColor(i,query_colors.value('Row_colour'))
             i += 1
 

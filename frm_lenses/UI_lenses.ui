@@ -28,7 +28,7 @@
        <enum>QFrame::Shadow::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="0">
+       <item row="3" column="0">
         <widget class="QTableView" name="tbl_all_lenses">
          <property name="alternatingRowColors">
           <bool>true</bool>
@@ -36,10 +36,45 @@
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QCheckBox" name="checkBox_mylenses">
-         <property name="text">
-          <string>Show only my lenses (colored)</string>
+        <widget class="QFrame" name="frame_chkbox_reset">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
          </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QCheckBox" name="checkBox_mylenses">
+            <property name="text">
+             <string>Show only my lenses (colored)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pb_reset_sort">
+            <property name="toolTip">
+             <string>Reset sorting to default</string>
+            </property>
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -84,12 +119,9 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pb_reset_sort">
-         <property name="toolTip">
-          <string>Reset sorting to default</string>
-         </property>
+        <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>Reset</string>
+          <string>Stats</string>
          </property>
         </widget>
        </item>
@@ -101,11 +133,8 @@
            <height>0</height>
           </size>
          </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(131, 131, 98);</string>
-         </property>
          <property name="placeholderText">
-          <string>for future use</string>
+          <string>Please select ...</string>
          </property>
         </widget>
        </item>
